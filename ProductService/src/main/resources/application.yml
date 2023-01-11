@@ -1,0 +1,26 @@
+#server:
+#  port: 9091
+#spring:
+#  application:
+#    name: CITIZEN-SERVICE
+#  datasource:
+#    driver-class-name: oracle.jdbc.OracleDriver
+#    password: Nishu1986
+#    url: jdbc:oracle:thin:@//NAVNEET-DESKTOP:1521/SB01PDB1
+#    username: NAVNEET
+#  jpa:
+#    database-platform: org.hibernate.dialect.Oracle12cDialect
+#    hibernate:
+#      ddl-auto: update
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ANT_PATH_MATCHER
+#management:
+#  info:
+#    env:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: info
+#        
