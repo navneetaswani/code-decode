@@ -1,0 +1,20 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: CITIZEN-SERVICE
+          uri:
+            lb://CITIZEN-SERVICE
+          predicates:
+            - Path= /citizen/**
+            
+        - id: VACCINATION-SERVICE
+          uri:
+            lb://VACCINATION-SERVICE
+          predicates:
+            - Path= /vaccinationcenter/**
+            
